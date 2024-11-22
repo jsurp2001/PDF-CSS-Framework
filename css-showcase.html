@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>CSS Showcase</title>
+		<link
+			rel="stylesheet"
+			href="pdf-style.css"
+		/>
+	</head>
+	<body>
+		<!-- Base Styling -->
+		<header>
+			<h1>CSS Showcase</h1>
+			<p class="text-center text-italic">
+				A comprehensive demo of all utilities and styles
+			</p>
+		</header>
+
+		<!-- Typography -->
+		<section>
+			<h2>Typography</h2>
+			<p class="text-bold">Bold Text</p>
+			<p class="text-light">Light Text</p>
+			<p class="text-uppercase">Uppercase Text</p>
+			<p class="text-lowercase">Lowercase Text</p>
+			<p class="text-center text-xl">Centered Large Text</p>
+			<p class="text-right text-sm">Right-Aligned Small Text</p>
+		</section>
+
+		<!-- Flexbox and Grid Layouts -->
+		<section>
+			<h2>Flexbox and Grid Layouts</h2>
+			<div class="flex-container justify-around">
+				<div class="text-center border p-3">Flex Item 1</div>
+				<div class="text-center border p-3">Flex Item 2</div>
+				<div class="text-center border p-3">Flex Item 3</div>
+			</div>
+			<div class="grid grid-cols-3 grid-gap-2 mt-3">
+				<div class="text-center border">Grid Item 1</div>
+				<div class="text-center border">Grid Item 2</div>
+				<div class="text-center border">Grid Item 3</div>
+			</div>
+		</section>
+
+		<!-- Spacing Utilities -->
+		<section>
+			<h2>Spacing Utilities</h2>
+			<div class="p-5 bg-light text-dark">Padding 5</div>
+			<div class="m-3 border">Margin 3</div>
+		</section>
+
+		<!-- Tables -->
+		<section>
+			<h2>Tables</h2>
+			<table class="table-striped">
+				<thead>
+					<tr>
+						<th>Header 1</th>
+						<th>Header 2</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Row 1, Col 1</td>
+						<td>Row 1, Col 2</td>
+					</tr>
+					<tr>
+						<td>Row 2, Col 1</td>
+						<td>Row 2, Col 2</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<!-- Printable Forms -->
+		<section>
+			<h2>Printable Forms</h2>
+			<div class="printable-form">
+				<div class="form-row">
+					<div class="form-cell">
+						<div class="field-title">First Name</div>
+						<div class="font-handwriting">John</div>
+					</div>
+					<div class="form-cell">
+						<div class="field-title">Last Name</div>
+						<div class="font-handwriting">Doe</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Charts -->
+		<section>
+			<h2>Charts</h2>
+			<div class="bar-chart-container">
+				<div class="bar-chart">
+					<div
+						class="bar bg-emerald-green"
+						style="--bar-height: 70%"
+					>
+						70%
+					</div>
+					<div
+						class="bar bg-sky-blue"
+						style="--bar-height: 50%"
+					>
+						50%
+					</div>
+					<div
+						class="bar bg-tomato-red"
+						style="--bar-height: 90%"
+					>
+						90%
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Utility Classes -->
+		<section>
+			<h2>Utility Classes</h2>
+			<div class="bg-primary text-light p-2">Background Primary</div>
+			<div class="border-secondary p-2 mt-2">Secondary Border</div>
+			<div class="shadow p-2 mt-2">Box Shadow</div>
+		</section>
+
+		<!-- Debugging -->
+		<section>
+			<h2>Debugging Utilities</h2>
+			<div class="dbb">
+				<div class="dbb">
+					<div class="dbb">Nested Debugging Border</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

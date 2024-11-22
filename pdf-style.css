@@ -1,0 +1,1064 @@
+/* Base CSS Framework for PDF Creation */
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+/* General Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+	--base-font-size: 12px; /* Default base font size for print */
+	--base-line-height: 1.5; /* Line height for readability */
+	--font-family: "Calibri", sans-serif; /* Calibri for clean and modern appearance */
+	--color-text: #000000; /* Black text for high contrast */
+	--color-background: #ffffff; /* White background for printing */
+}
+
+/* Body Defaults */
+body {
+	font-size: var(--base-font-size);
+	line-height: var(--base-line-height);
+	font-family: var(--font-family);
+	color: var(--color-text);
+	background-color: var(--color-background);
+	margin: 1cm; /* Default page margin for PDFs */
+}
+
+/* Typography Scale */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0.5rem;
+	font-family: var(--font-family);
+}
+
+h1 {
+	font-size: 2rem; /* Example: 24px if base is 12px */
+}
+
+h2 {
+	font-size: 1.75rem; /* Example: 21px */
+}
+
+h3 {
+	font-size: 1.5rem; /* Example: 18px */
+}
+
+h4 {
+	font-size: 1.25rem; /* Example: 15px */
+}
+
+h5 {
+	font-size: 1rem; /* Example: 12px */
+}
+
+h6 {
+	font-size: 0.875rem; /* Example: 10.5px */
+}
+
+p {
+	margin-bottom: 1rem;
+	font-size: 1rem; /* Base font size */
+}
+
+/* Text Utilities */
+
+/* Text Weight */
+.text-bold {
+	font-weight: bold;
+}
+.text-normal {
+	font-weight: normal;
+}
+.text-light {
+	font-weight: 300;
+}
+
+/* Text Style */
+.text-italic {
+	font-style: italic;
+}
+.text-underline {
+	text-decoration: underline;
+}
+.text-uppercase {
+	text-transform: uppercase;
+}
+.text-lowercase {
+	text-transform: lowercase;
+}
+.text-capitalize {
+	text-transform: capitalize;
+}
+
+/* Horizontal Alignment */
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+/* Vertical Alignment */
+.align-top {
+	vertical-align: top;
+}
+
+.align-middle {
+	vertical-align: middle;
+}
+
+.align-bottom {
+	vertical-align: bottom;
+}
+
+/* Font Sizes */
+.text-xs {
+	font-size: 0.75rem;
+}
+.text-sm {
+	font-size: 0.875rem;
+}
+.text-base {
+	font-size: 1rem;
+}
+.text-lg {
+	font-size: 1.125rem;
+}
+.text-xl {
+	font-size: 1.25rem;
+}
+
+/* Line Heights */
+.leading-none {
+	line-height: 1;
+}
+.leading-tight {
+	line-height: 1.25;
+}
+.leading-normal {
+	line-height: 1.5;
+}
+.leading-loose {
+	line-height: 2;
+}
+
+/* Letter Spacing */
+.tracking-tighter {
+	letter-spacing: -0.05em;
+}
+.tracking-tight {
+	letter-spacing: -0.025em;
+}
+.tracking-normal {
+	letter-spacing: 0;
+}
+.tracking-wide {
+	letter-spacing: 0.025em;
+}
+.tracking-wider {
+	letter-spacing: 0.05em;
+}
+
+/* Full Content Alignment (Flexbox) */
+.flex-container {
+	display: flex;
+	align-items: flex-start; /* Default vertical alignment */
+	justify-content: flex-start; /* Default horizontal alignment */
+}
+
+/* Horizontal Alignment in Flexbox */
+.justify-start {
+	justify-content: flex-start;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-around {
+	justify-content: space-around;
+}
+
+.justify-evenly {
+	justify-content: space-evenly;
+}
+
+/* Vertical Alignment in Flexbox */
+.align-start {
+	align-items: flex-start;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.align-end {
+	align-items: flex-end;
+}
+
+.align-stretch {
+	align-items: stretch;
+}
+
+/* Utility for Centering Both Vertically and Horizontally */
+.center-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%; /* Requires parent height */
+}
+
+/* Spacing Utilities */
+
+/* Margins  */
+.m-0 {
+	margin: 0 !important;
+}
+.m-1 {
+	margin: 0.25rem !important;
+}
+.m-2 {
+	margin: 0.5rem !important;
+}
+.m-3 {
+	margin: 0.75rem !important;
+}
+.m-4 {
+	margin: 1rem !important;
+}
+.m-5 {
+	margin: 1.25rem !important;
+}
+
+/* Top margin */
+.mt-0 {
+	margin-top: 0 !important;
+}
+.mt-1 {
+	margin-top: 0.25rem !important;
+}
+.mt-2 {
+	margin-top: 0.5rem !important;
+}
+.mt-3 {
+	margin-top: 0.75rem !important;
+}
+.mt-4 {
+	margin-top: 1rem !important;
+}
+.mt-5 {
+	margin-top: 1.25rem !important;
+}
+
+/* Right margin */
+.mr-0 {
+	margin-right: 0 !important;
+}
+.mr-1 {
+	margin-right: 0.25rem !important;
+}
+.mr-2 {
+	margin-right: 0.5rem !important;
+}
+.mr-3 {
+	margin-right: 0.75rem !important;
+}
+.mr-4 {
+	margin-right: 1rem !important;
+}
+.mr-5 {
+	margin-right: 1.25rem !important;
+}
+
+/* Bottom margin */
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+.mb-1 {
+	margin-bottom: 0.25rem !important;
+}
+.mb-2 {
+	margin-bottom: 0.5rem !important;
+}
+.mb-3 {
+	margin-bottom: 0.75rem !important;
+}
+.mb-4 {
+	margin-bottom: 1rem !important;
+}
+.mb-5 {
+	margin-bottom: 1.25rem !important;
+}
+
+/* Left margin */
+.ml-0 {
+	margin-left: 0 !important;
+}
+.ml-1 {
+	margin-left: 0.25rem !important;
+}
+.ml-2 {
+	margin-left: 0.5rem !important;
+}
+.ml-3 {
+	margin-left: 0.75rem !important;
+}
+.ml-4 {
+	margin-left: 1rem !important;
+}
+.ml-5 {
+	margin-left: 1.25rem !important;
+}
+
+/* Layout */
+.container {
+	width: 100%;
+	max-width: 21cm; /* A4 paper width */
+	padding: 1rem;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -0.5rem;
+}
+
+.col {
+	flex: 1;
+	padding: 0 0.5rem;
+}
+
+.col-6 {
+	flex: 0 0 50%;
+}
+
+.col-4 {
+	flex: 0 0 33.33%;
+}
+
+.col-3 {
+	flex: 0 0 25%;
+}
+
+/* Table Styling */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 1rem;
+}
+
+th,
+td {
+	padding: 0.5rem;
+	border: 1px solid #000;
+	text-align: left;
+	vertical-align: top;
+	word-wrap: break-word;
+}
+
+thead th {
+	background-color: #f0f0f0;
+	font-weight: bold;
+}
+
+/* Small Table Styles */
+.table-sm {
+	margin-bottom: 0.8rem;
+}
+
+.table-sm th,
+.table-sm td {
+	padding: 0.3rem !important; /* Reduced padding for a tighter layout */
+}
+
+/* Extra Small Table Styles */
+.table-xs {
+	margin-bottom: 0.6rem;
+}
+
+.table-xs th,
+.table-xs td {
+	padding: 0.1rem !important; /* Reduced padding for a tighter layout */
+}
+
+/* Striped Rows */
+.table-striped tbody tr:nth-child(odd) {
+	background-color: #f9f9f9; /* Light grey background for odd rows */
+}
+
+.table-striped tbody tr:nth-child(even) {
+	background-color: #ffffff; /* White background for even rows */
+}
+
+/* Printable Form Styling */
+.printable-form {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	font-size: 12px;
+	line-height: 1;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 0;
+	margin: 0 0 1rem 0;
+}
+
+.form-row {
+	display: flex;
+	flex-wrap: nowrap;
+	border-bottom: 1px solid #000;
+	min-height: 2.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+.form-cell {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	text-align: left;
+	border-right: 1px solid #000;
+	margin: 0;
+	padding: 0.2rem;
+}
+
+.form-cell:last-child {
+	border-right: none;
+}
+
+.field-title {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+}
+
+.font-handwriting {
+	margin-top: 0.25rem;
+	font-family: "Indie Flower", cursive;
+	font-size: 1.1rem; /* Adjust size as needed for readability */
+}
+
+.medium-row {
+	display: flex;
+	flex-direction: column;
+	min-height: 2.5rem;
+	align-items: flex-start;
+	border-bottom: none;
+	margin: 0;
+	padding: 0.2rem;
+}
+
+.large-row {
+	display: flex;
+	flex-direction: column;
+	min-height: 5rem;
+	align-items: flex-start;
+	border-bottom: none;
+	margin: 0;
+	padding: 0.2rem;
+}
+
+/* Instruction Text */
+.instruction-text {
+	text-transform: capitalize;
+	font-size: 0.6rem; /* Smaller font size */
+	color: gray; /* Gray text */
+	font-style: italic; /* Italic style */
+	float: right; /* Float to the right of the parent element */
+	margin-left: 1rem; /* Optional spacing from the title */
+	font-weight: normal;
+}
+
+/* Percentage Width Utilities */
+.w-10 {
+	flex: 0 0 10%;
+	max-width: 10%;
+}
+
+.w-15 {
+	flex: 0 0 15%;
+	max-width: 15%;
+}
+
+.w-20 {
+	flex: 0 0 20%;
+	max-width: 20%;
+}
+
+.w-25 {
+	flex: 0 0 25%;
+	max-width: 25%;
+}
+
+.w-30 {
+	flex: 0 0 30%;
+	max-width: 30%;
+}
+
+.w-33 {
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+}
+
+.w-40 {
+	flex: 0 0 40%;
+	max-width: 40%;
+}
+
+.w-50 {
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.w-60 {
+	flex: 0 0 60%;
+	max-width: 60%;
+}
+
+.w-66 {
+	flex: 0 0 66.66%;
+	max-width: 66.66%;
+}
+
+.w-75 {
+	flex: 0 0 75%;
+	max-width: 75%;
+}
+
+.w-80 {
+	flex: 0 0 80%;
+	max-width: 80%;
+}
+
+.w-90 {
+	flex: 0 0 90%;
+	max-width: 90%;
+}
+
+.w-100 {
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+/* CHART STYLE */
+:root {
+	/* Color Variables */
+	--color-sky-blue: #4fc3f7;
+	--color-amber: #ffc107;
+	--color-emerald-green: #4caf50;
+	--color-tomato-red: #ff5722;
+	--color-purple-orchid: #9c27b0;
+	--color-cool-gray: #607d8b;
+	--color-sunset-orange: #ff7043;
+	--color-cyan: #00bcd4;
+	--color-golden-yellow: #ffeb3b;
+	--color-indigo: #3f51b5;
+}
+
+/* Reusable Color Classes */
+.bg-sky-blue {
+	background-color: var(--color-sky-blue);
+}
+
+.bg-amber {
+	background-color: var(--color-amber);
+}
+
+.bg-emerald-green {
+	background-color: var(--color-emerald-green);
+}
+
+.bg-tomato-red {
+	background-color: var(--color-tomato-red);
+}
+
+.bg-purple-orchid {
+	background-color: var(--color-purple-orchid);
+}
+
+.bg-cool-gray {
+	background-color: var(--color-cool-gray);
+}
+
+.bg-sunset-orange {
+	background-color: var(--color-sunset-orange);
+}
+
+.bg-cyan {
+	background-color: var(--color-cyan);
+}
+
+.bg-golden-yellow {
+	background-color: var(--color-golden-yellow);
+}
+
+.bg-indigo {
+	background-color: var(--color-indigo);
+}
+
+/* Bar Chart */
+.bar-chart-container {
+	display: flex;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
+.bar-chart {
+	display: flex;
+	align-items: flex-end;
+	gap: 0.5rem;
+	height: 200px;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	padding: 10px;
+}
+
+.bar {
+	width: 40px;
+	height: var(--bar-height);
+	color: white;
+	text-align: center;
+	line-height: 1.5;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	align-items: center; /* Centers the item vertically */
+}
+
+.bar-legend {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.bar-legend div {
+	display: flex;
+	align-items: center;
+	font-size: 0.875rem;
+}
+
+.bar-legend-color {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 0.5rem;
+	border-radius: 4px;
+}
+
+/* Pie Chart */
+.pie-chart-container {
+	display: flex;
+	gap: 1rem;
+}
+
+.pie-chart {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: conic-gradient(
+		var(--color-purple-orchid) 0% 40%,
+		var(--color-cool-gray) 40% 75%,
+		var(--color-sunset-orange) 75% 100%
+	);
+}
+
+.pie-legend {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.pie-legend div {
+	display: flex;
+	align-items: center;
+	font-size: 0.875rem;
+}
+
+.pie-legend-color {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 0.5rem;
+	border-radius: 4px;
+}
+
+/* Line Chart */
+.line-chart-container {
+	display: flex;
+	gap: 1rem;
+}
+
+.line-chart {
+	position: relative;
+	width: 80%;
+	height: 200px;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: 20px;
+}
+
+.line-point {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.line-legend {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.line-legend div {
+	display: flex;
+	align-items: center;
+	font-size: 0.875rem;
+}
+
+.line-legend-color {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right: 0.5rem;
+	border-radius: 4px;
+}
+
+/* Donut Chart */
+.donut-chart {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.donut {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: conic-gradient(
+		var(--color-indigo) 0% calc(var(--percent) * 1%),
+		#ccc calc(var(--percent) * 1%) 100%
+	);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #333;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+/* Heat Map */
+.heatmap td {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	background-color: hsl(0, 50%, calc(100% - var(--value) * 1%));
+	color: white;
+}
+
+/* Text Color */
+.text-primary {
+	color: var(--color-primary, #007bff);
+}
+.text-secondary {
+	color: var(--color-secondary, #6c757d);
+}
+.text-success {
+	color: var(--color-success, #28a745);
+}
+.text-danger {
+	color: var(--color-danger, #dc3545);
+}
+.text-warning {
+	color: var(--color-warning, #ffc107);
+}
+.text-info {
+	color: var(--color-info, #17a2b8);
+}
+.text-dark {
+	color: var(--color-dark, #343a40);
+}
+.text-light {
+	color: var(--color-light, #f8f9fa);
+}
+
+/* Border Utilities */
+
+/* Border Sides */
+.border {
+	border: 1px solid var(--border-color, #ddd);
+}
+.border-top {
+	border-top: 1px solid var(--border-color, #ddd);
+}
+.border-right {
+	border-right: 1px solid var(--border-color, #ddd);
+}
+.border-bottom {
+	border-bottom: 1px solid var(--border-color, #ddd);
+}
+.border-left {
+	border-left: 1px solid var(--border-color, #ddd);
+}
+
+/* Border Radius */
+.rounded {
+	border-radius: 0.25rem;
+}
+.rounded-circle {
+	border-radius: 50%;
+}
+.rounded-pill {
+	border-radius: 50rem;
+}
+
+/* Border Colors */
+.border-primary {
+	border-color: var(--color-primary, #007bff);
+}
+.border-secondary {
+	border-color: var(--color-secondary, #6c757d);
+}
+.border-success {
+	border-color: var(--color-success, #28a745);
+}
+.border-danger {
+	border-color: var(--color-danger, #dc3545);
+}
+.border-warning {
+	border-color: var(--color-warning, #ffc107);
+}
+.border-info {
+	border-color: var(--color-info, #17a2b8);
+}
+.border-dark {
+	border-color: var(--color-dark, #343a40);
+}
+.border-light {
+	border-color: var(--color-light, #f8f9fa);
+}
+
+/* Border Widths */
+.border-thin {
+	border-width: 1px;
+}
+.border-thick {
+	border-width: 3px;
+}
+.border-extra-thick {
+	border-width: 5px;
+}
+
+/* ===== Background Utilities ===== */
+.bg-primary {
+	background-color: var(--color-primary, #007bff);
+	color: #fff; /* Ensure contrast */
+}
+.bg-secondary {
+	background-color: var(--color-secondary, #6c757d);
+	color: #fff;
+}
+.bg-success {
+	background-color: var(--color-success, #28a745);
+	color: #fff;
+}
+.bg-danger {
+	background-color: var(--color-danger, #dc3545);
+	color: #fff;
+}
+.bg-warning {
+	background-color: var(--color-warning, #ffc107);
+	color: #212529; /* Dark text for better contrast */
+}
+.bg-info {
+	background-color: var(--color-info, #17a2b8);
+	color: #fff;
+}
+.bg-dark {
+	background-color: var(--color-dark, #343a40);
+	color: #fff;
+}
+.bg-light {
+	background-color: var(--color-light, #f8f9fa);
+	color: #212529;
+}
+
+/* Visibility */
+.visible {
+	visibility: visible;
+}
+.invisible {
+	visibility: hidden;
+}
+
+/* Hover Effects */
+.hover-underline:hover {
+	text-decoration: underline;
+}
+.hover-scale:hover {
+	transform: scale(1.05);
+}
+.hover-shadow:hover {
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus States */
+.focus-outline {
+	outline: 2px solid var(--color-primary, #007bff);
+}
+.focus-outline-none {
+	outline: none;
+}
+
+/* Z-Index */
+.z-0 {
+	z-index: 0;
+}
+.z-10 {
+	z-index: 10;
+}
+.z-50 {
+	z-index: 50;
+}
+.z-auto {
+	z-index: auto;
+}
+
+/* Display Utilities */
+.d-inline {
+	display: inline;
+}
+.d-block {
+	display: block;
+}
+.d-inline-block {
+	display: inline-block;
+}
+.d-none {
+	display: none;
+}
+
+/* Shadow Utilities */
+.shadow-sm {
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.shadow {
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.shadow-lg {
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.shadow-none {
+	box-shadow: none;
+}
+
+/* Cursor Styles */
+.cursor-pointer {
+	cursor: pointer;
+}
+.cursor-default {
+	cursor: default;
+}
+.cursor-wait {
+	cursor: wait;
+}
+.cursor-not-allowed {
+	cursor: not-allowed;
+}
+
+/* Overflow Handling */
+.overflow-hidden {
+	overflow: hidden;
+}
+.overflow-scroll {
+	overflow: scroll;
+}
+.overflow-auto {
+	overflow: auto;
+}
+
+/* Opacity */
+.opacity-0 {
+	opacity: 0;
+}
+.opacity-50 {
+	opacity: 0.5;
+}
+.opacity-100 {
+	opacity: 1;
+}
+
+/* Widths and Heights */
+.w-full {
+	width: 100%;
+}
+.h-full {
+	height: 100%;
+}
+.max-w-screen {
+	max-width: 100vw;
+}
+.max-h-screen {
+	max-height: 100vh;
+}
+
+/* Print Optimization */
+@media print {
+	body {
+		margin: 1cm;
+	}
+
+	.no-print {
+		display: none;
+	}
+}
+
+/* General Debugging Outline for All Levels */
+.dbb {
+	outline: 1px solid red; /* Default outline for elements */
+	outline-offset: -1px; /* Align the outline with the element's edge */
+}
+
+/* Nested Level Colors */
+.dbb > .dbb {
+	outline-color: blue;
+}
+
+.dbb > .dbb > .dbb {
+	outline-color: green;
+}
+
+.dbb > .dbb > .dbb > .dbb {
+	outline-color: purple;
+}

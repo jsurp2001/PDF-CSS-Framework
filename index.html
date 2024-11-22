@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<meta
+			name="description"
+			content="Example PDF showcasing CSS framework styles"
+		/>
+		<title>PDF Style Framework Demo</title>
+		<link
+			rel="stylesheet"
+			href="pdf-style.css"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Header Section -->
+			<header>
+				<h1 class="text-center">PDF Style Framework</h1>
+				<h2 class="text-center">Showcasing Clean and Print-Ready Designs</h2>
+				<p class="text-center text-italic">
+					Optimized for PDF creation and printing
+				</p>
+			</header>
+
+			<!-- Typography Showcase -->
+			<section>
+				<h2>Typography</h2>
+				<p>
+					This framework provides clean, readable typography with a base font
+					size of 12px and scalable units using <code>rem</code>.
+				</p>
+				<h3>Heading Levels</h3>
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+
+				<h3>Text Utilities</h3>
+				<p class="text-bold">This is bold text.</p>
+				<p class="text-italic">This is italic text.</p>
+				<p class="text-underline">This is underlined text.</p>
+			</section>
+
+			<!-- Layout Showcase -->
+			<section>
+				<h2>Layout</h2>
+				<div class="row">
+					<div class="col-6">
+						<p class="text-center">Column 1 (50%)</p>
+					</div>
+					<div class="col-6">
+						<p class="text-center">Column 2 (50%)</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<p class="text-center">Column 1 (33%)</p>
+					</div>
+					<div class="col-4">
+						<p class="text-center">Column 2 (33%)</p>
+					</div>
+					<div class="col-4">
+						<p class="text-center">Column 3 (33%)</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Table Showcase -->
+			<section>
+				<h2>Table</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Header 1</th>
+							<th>Header 2</th>
+							<th>Header 3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Row 1, Cell 1</td>
+							<td>Row 1, Cell 2</td>
+							<td>Row 1, Cell 3</td>
+						</tr>
+						<tr>
+							<td>Row 2, Cell 1</td>
+							<td>Row 2, Cell 2</td>
+							<td>Row 2, Cell 3</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section>
+				<h2>Small Table</h2>
+				<table class="table-sm">
+					<thead>
+						<tr>
+							<th>Header 1</th>
+							<th>Header 2</th>
+							<th>Header 3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Row 1, Cell 1</td>
+							<td>Row 1, Cell 2</td>
+							<td>Row 1, Cell 3</td>
+						</tr>
+						<tr>
+							<td>Row 2, Cell 1</td>
+							<td>Row 2, Cell 2</td>
+							<td>Row 2, Cell 3</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h2>Extra Small Table</h2>
+				<table class="table-xs">
+					<thead>
+						<tr>
+							<th>Header 1</th>
+							<th>Header 2</th>
+							<th>Header 3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Row 1, Cell 1</td>
+							<td>Row 1, Cell 2</td>
+							<td>Row 1, Cell 3</td>
+						</tr>
+						<tr>
+							<td>Row 2, Cell 1</td>
+							<td>Row 2, Cell 2</td>
+							<td>Row 2, Cell 3</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h2>Striped Table</h2>
+				<table class="table-striped">
+					<thead>
+						<tr>
+							<th>Header 1</th>
+							<th>Header 2</th>
+							<th>Header 3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Row 1, Cell 1</td>
+							<td>Row 1, Cell 2</td>
+							<td>Row 1, Cell 3</td>
+						</tr>
+						<tr>
+							<td>Row 2, Cell 1</td>
+							<td>Row 2, Cell 2</td>
+							<td>Row 2, Cell 3</td>
+						</tr>
+						<tr>
+							<td>Row 3, Cell 1</td>
+							<td>Row 3, Cell 2</td>
+							<td>Row 3, Cell 3</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<h2>Printable Form</h2>
+			<div class="printable-form">
+				<!-- First Row -->
+				<div class="form-row">
+					<div class="form-cell">
+						<div class="field-title">
+							First Name<span class="instruction-text"
+								>Please print clearly</span
+							>
+						</div>
+						<div class="font-handwriting">James</div>
+					</div>
+					<div class="form-cell w-15">
+						<div class="field-title">Middle Initial</div>
+						<div class="font-handwriting">R</div>
+					</div>
+					<div class="form-cell">
+						<div class="field-title">Last Name</div>
+						<div class="font-handwriting">Gonzales</div>
+					</div>
+					<div class="form-cell w-20">
+						<div class="field-title">Date of Birth</div>
+						<div class="font-handwriting">05/31/1974</div>
+					</div>
+				</div>
+
+				<!-- Second Row -->
+				<div class="form-row">
+					<div
+						class="form-cell"
+						style="flex: 3"
+					>
+						<div class="field-title">Address, City, State, Zip</div>
+						<div class="font-handwriting">
+							16018 North 171st drive, Surprise, AZ 85388
+						</div>
+					</div>
+					<div class="form-cell">
+						<div class="field-title">Phone</div>
+						<div class="font-handwriting">480-322-0007</div>
+					</div>
+					<div class="form-cell w-30">
+						<div class="field-title">Email</div>
+						<div class="font-handwriting">jsurp2001@gmail.com</div>
+					</div>
+				</div>
+
+				<!-- Third Row -->
+				<div class="form-row large-row">
+					<div class="field-title">Knowledge, Skills & Abilities</div>
+					<div class="font-handwriting">
+						<p>
+							Pariatur nascetur nec! Itaque dolore curae necessitatibus aliquid
+							diam elit modi sem, illo voluptatibus molestias, turpis quidem
+							ultricies cum quidem. Potenti, augue eu eos, ridiculus aliquet
+							neque esse.
+						</p>
+
+						<p>
+							Tenetur provident mollitia voluptatibus! Modi non officiis rhoncus
+							numquam lobortis ligula.
+						</p>
+
+						<p>
+							Molestie quas laborum sunt feugiat, tincidunt veniam optio,
+							officia! Inventore! Ipsam accusamus? Vestibulum aliquet habitant
+							laborum reiciendis eveniet faucibus commodi voluptate inceptos
+							purus doloremque tempus metus fusce eius? Ratione fames duis
+							ullamco labore minima. Anim ad? Doloribus nunc. Magnam, placerat
+							ad excepteur, saepe nihil, nulla, eu hymenaeos ridiculus! Fuga!
+							Consequatur ad perspiciatis.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Chart Examples -->
+			<section>
+				<h2>Chart Examples</h2>
+				<h4>Bar Chart</h4>
+				<div class="bar-chart-container mb-5">
+					<div class="bar-chart">
+						<div
+							class="bar bg-sky-blue"
+							style="--bar-height: 80%"
+						>
+							80%
+						</div>
+						<div
+							class="bar bg-amber"
+							style="--bar-height: 60%"
+						>
+							60%
+						</div>
+						<div
+							class="bar bg-emerald-green"
+							style="--bar-height: 90%"
+						>
+							90%
+						</div>
+						<div
+							class="bar bg-tomato-red"
+							style="--bar-height: 50%"
+						>
+							50%
+						</div>
+					</div>
+					<div class="bar-legend">
+						<div>
+							<span class="bar-legend-color bg-sky-blue"></span>Category 1
+						</div>
+						<div><span class="bar-legend-color bg-amber"></span>Category 2</div>
+						<div>
+							<span class="bar-legend-color bg-emerald-green"></span>Category 3
+						</div>
+						<div>
+							<span class="bar-legend-color bg-tomato-red"></span>Category 4
+						</div>
+					</div>
+				</div>
+
+				<h4>Pie Chart</h4>
+				<div class="pie-chart-container mb-5">
+					<div class="pie-chart"></div>
+					<div class="pie-legend">
+						<div>
+							<span class="pie-legend-color bg-purple-orchid"></span>40% -
+							Purple Segment
+						</div>
+						<div>
+							<span class="pie-legend-color bg-cool-gray"></span>35% - Gray
+							Segment
+						</div>
+						<div>
+							<span class="pie-legend-color bg-sunset-orange"></span>25% -
+							Sunset Orange Segment
+						</div>
+					</div>
+				</div>
+
+				<h4>Line Chart</h4>
+				<div class="line-chart-container mb-5">
+					<div class="line-chart">
+						<div
+							class="line-point bg-sky-blue"
+							style="left: 10%; bottom: 20%"
+						></div>
+						<div
+							class="line-point bg-amber"
+							style="left: 30%; bottom: 50%"
+						></div>
+						<div
+							class="line-point bg-emerald-green"
+							style="left: 50%; bottom: 30%"
+						></div>
+						<div
+							class="line-point bg-tomato-red"
+							style="left: 70%; bottom: 80%"
+						></div>
+						<div
+							class="line-point bg-purple-orchid"
+							style="left: 90%; bottom: 40%"
+						></div>
+					</div>
+					<div class="line-legend">
+						<div>
+							<span class="line-legend-color bg-sky-blue"></span>Data Point 1
+						</div>
+						<div>
+							<span class="line-legend-color bg-amber"></span>Data Point 2
+						</div>
+						<div>
+							<span class="line-legend-color bg-emerald-green"></span>Data Point
+							3
+						</div>
+						<div>
+							<span class="line-legend-color bg-tomato-red"></span>Data Point 4
+						</div>
+						<div>
+							<span class="line-legend-color bg-purple-orchid"></span>Data Point
+							5
+						</div>
+					</div>
+				</div>
+
+				<h4>Donut Chart</h4>
+				<div class="donut-chart mb-5">
+					<div
+						class="donut"
+						style="--percent: 75"
+					>
+						75%
+					</div>
+				</div>
+
+				<h4>Heat Map</h4>
+				<table class="heatmap mb-5">
+					<tr>
+						<td style="--value: 10">10</td>
+						<td style="--value: 50">50</td>
+						<td style="--value: 90">90</td>
+					</tr>
+					<tr>
+						<td style="--value: 30">30</td>
+						<td style="--value: 70">70</td>
+						<td style="--value: 100">100</td>
+					</tr>
+				</table>
+			</section>
+
+			<h2>Utility Usage Example</h2>
+			<section>
+				<h5>Text Formatting</h5>
+				<p class="text-bold text-primary">
+					This is bold, primary-colored text.
+				</p>
+				<p class="text-italic text-success">
+					This is italic, success-colored text.
+				</p>
+				<h5>Borders</h5>
+				<div class="border border-primary p-3">
+					This box has a primary-colored border and padding.
+				</div>
+				<div class="border-top border-danger">
+					This has a danger-colored border at the top.
+				</div>
+
+				<h5>Background Colors</h5>
+				<div class="bg-warning p-3">
+					This box has a warning background with padding.
+				</div>
+				<div class="bg-dark text-light p-2">
+					This has a dark background with light text.
+				</div>
+
+				<h5>Spacing</h5>
+				<div class="m-3 p-2 border border-info">
+					This box has margin and padding applied.
+				</div>
+			</section>
+
+			<!-- Print Optimization -->
+			<section>
+				<h2>Print Optimization</h2>
+				<p>
+					Elements with the class <code>no-print</code> will be hidden when
+					printing or generating a PDF.
+				</p>
+				<p class="no-print">This paragraph will not appear in the PDF.</p>
+			</section>
+		</div>
+	</body>
+</html>
