@@ -25,7 +25,114 @@ body {
 	font-family: var(--font-family);
 	color: var(--color-text);
 	background-color: var(--color-background);
-	margin: 1cm; /* Default page margin for PDFs */
+}
+
+.container {
+	width: 100%;
+	max-width: 880px;
+	margin: 0;
+	padding: 0;
+}
+
+/* Page Component Styling */
+.title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	border-bottom: 2px solid #ccc;
+	margin-bottom: 5px;
+	height: 50px;
+}
+
+/* Title Section */
+.title .heading {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #333;
+}
+
+/* Details Section */
+.title .details {
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+/* Individual Lines in Details */
+.title .details .date {
+	font-size: 1rem;
+	color: #666;
+}
+
+.title .details .title-info {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #444;
+}
+
+/* Content Styling */
+.content {
+	margin: 0;
+	padding: 0;
+	height: 970px;
+}
+
+/* Footer Styling */
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: start; /* Ensures vertical centering */
+	padding: 0;
+	border-top: 2px solid #ccc;
+	margin-top: 5px;
+	padding-top: 3px;
+	height: 35px;
+}
+
+.footer .info {
+	display: flex;
+	align-items: start; /* Vertically center items within .info */
+	font-weight: bold;
+	color: #333;
+	width: 50%;
+	margin: 2px 0 0 0;
+	padding: 0;
+}
+
+.footer .info img {
+	display: flex;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	/* border-radius: 50%; */
+	margin-right: 6px;
+}
+
+.footer .info p {
+	margin: 0;
+	margin-top: 2px;
+	font-size: 0.9rem;
+	line-height: 1.1;
+}
+
+.footer .info p span {
+	font-size: 0.6rem;
+	font-weight: 300;
+	color: #666;
+	display: block;
+	white-space: normal;
+}
+
+.footer .page {
+	text-align: right;
+	display: flex;
+	align-items: start;
+	justify-content: flex-end;
+	margin: 0;
+	padding: 0;
 }
 
 /* Typography Scale */

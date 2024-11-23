@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Report Template</title>
+		<link
+			rel="stylesheet"
+			href="pdf-style.css"
+		/>
+		{STYLE}
+	</head>
+	<body>
+		<div class="container">
+			<!-- Report Title -->
+			<div class="title">
+				<div class="heading">{TITLE}</div>
+				<div class="details">
+					<div class="date">{DATE}</div>
+					<div class="title-info">{TITLE-INFO}</div>
+				</div>
+			</div>
+			<!-- Report Content -->
+			<div class="content">{TABLE}</div>
+			<!-- Report Footer -->
+			<div class="footer">
+				<div class="info">
+					<img
+						src="https://www.gravatar.com/avatar/899807cc16624cfa59ce0fe6de95aae2?s=50&d=mp&r=g"
+						alt="Gravatar"
+					/>
+					<p>James Gonzales<br /><span>jsurp2001@gmail.com</span></p>
+				</div>
+				<div class="page">{PAGES}</div>
+			</div>
+		</div>
+	</body>
+</html>
